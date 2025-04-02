@@ -1,0 +1,96 @@
+.card-img-top {
+    width: 100%;         
+    height: 200px;      
+    object-fit: cover;   
+    border-radius: 8px;  
+}
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 200px;
+    width: 150px;
+    margin: 5px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    p{
+        font-weight: 500;
+    }
+}
+
+.category-card img {
+    width: 160px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+.btn-outline-primary {
+    border-radius: 10px; 
+}
+footer {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+}
+
+.foodieland-description{
+    color: gray;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.links-container {
+    display: flex;
+    gap: 20px; 
+}
+
+.links-container .link {
+    text-decoration: none;
+    color: #000; 
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.links-container .link:hover {
+    color: #333; 
+}
+
+.subscribe-section {
+    border-radius: 20px;
+    background: white; 
+
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.subscribe-section .container {
+    padding: 40px;
+    border-radius: 15px;
+    background: url('foodbi.jpg') no-repeat center center/cover;
+
+    position: relative; 
+}
+
+.form-control {
+    max-width: 300px;
+    border-radius: 25px;
+}
+
+.btn-dark {
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
