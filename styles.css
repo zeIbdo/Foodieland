@@ -4,6 +4,13 @@
     object-fit: cover;   
     border-radius: 8px;  
 }
+.card-img-top {
+    object-fit: contain;
+    height: 200px; 
+    padding-top: 20px;
+    width: 100%;
+}
+
 .category-card {
     display: flex;
     flex-direction: column;
