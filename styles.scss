@@ -3,69 +3,166 @@ $secondary-color: #6c757d;
 $bg-light: #f8f9fa;
 $bg-dark: #343a40;
 $text-light: #ffffff;
+$bg-white: #ffffff;
 
 $large-screen: 1440px;
 $extra-large-screen: 1600px;
 
+@mixin button-variant($bg, $color) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
 }
 
 header {
-    
-    .navbar {
-        .navbar-brand {
-            font-weight: bold;
-        }
-        
+  .navbar {
+    .navbar-brand {
+      font-weight: bold;
     }
-    
+  }
 }
-//develop
+
 .categories {
-    text-align: center;
-    .category-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+  text-align: center;
 
-        button {
-            @include button-variant($primary-color, white);
-            padding: 1rem 1.5rem;
-            font-size: 1.2rem;
-        }
+  .category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    button {
+      @include button-variant($primary-color, white);
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem;
     }
-}
-
-
-
-
-
-footer {
-    background: $bg-white;
-    text-align: center;
-    padding: 20px 0;
-    
-    a {
-        color: $text-light;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+  }
 }
 
 @media (max-width: $large-screen) {
-    .categories .category-list {
-        button {
-            font-size: 1.25rem;
-            padding: 1rem 2rem;
-        }
+  .categories {
+    .category-list {
+      button {
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+      }
     }
-
-    
+  }
 }
 
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 200px;
+  width: 150px;
+  margin: 5px;
+  background: $bg-white;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+
+  p {
+    font-weight: 500;
+  }
+
+  img {
+    width: 160px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn-outline-primary {
+  border-radius: 10px;
+}
+
+.btn-dark {
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+footer {
+  background-color: $bg-white;
+  color: #333;
+  display: flex;
+  text-align: center;
+  padding: 20px 0;
+
+  a {
+    color: $secondary-color; 
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.foodieland-description {
+  color: gray;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.links-container {
+  display: flex;
+  gap: 20px;
+
+  .link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #333;
+    }
+  }
+}
+
+.subscribe-section {
+  border-radius: 20px;
+  background: white;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    padding: 100px 0px; 
+    border-radius: 15px;
+    background: url('assets/images/foodbi.jpg') no-repeat center center/cover;
+    position: relative;
+  }
+}
+
+.form-control {
+  max-width: 300px;
+  border-radius: 25px;
+}

@@ -1,103 +1,137 @@
-.card-img-top {
-    width: 100%;         
-    height: 200px;      
-    object-fit: cover;   
-    border-radius: 8px;  
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header .navbar .navbar-brand {
+  font-weight: bold;
+}
+
+.categories {
+  text-align: center;
+}
+.categories .category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.categories .category-list button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1440px) {
+  .categories .category-list button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+  }
 }
 .card-img-top {
-    object-fit: contain;
-    height: 200px; 
-    padding-top: 20px;
-    width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .category-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    height: 200px;
-    width: 150px;
-    margin: 5px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s;
-    p{
-        font-weight: 500;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 200px;
+  width: 150px;
+  margin: 5px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
 }
-
+.category-card p {
+  font-weight: 500;
+}
 .category-card img {
-    width: 160px;
-    height: 130px;
-    object-fit: contain;
-    margin-bottom: 8px;
+  width: 160px;
+  height: 130px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 8px;
 }
-
 .category-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
+
 .btn-outline-primary {
-    border-radius: 10px; 
-}
-footer {
-    background-color: #fff;
-    color: #333;
-    display: flex;
-}
-
-.foodieland-description{
-    color: gray;
-}
-.right-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.links-container {
-    display: flex;
-    gap: 20px; 
-}
-
-.links-container .link {
-    text-decoration: none;
-    color: #000; 
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-.links-container .link:hover {
-    color: #333; 
-}
-
-.subscribe-section {
-    border-radius: 20px;
-    background: white; 
-
-    padding: 60px 20px;
-    position: relative;
-    overflow: hidden; 
-}
-
-.subscribe-section .container {
-    padding: 40px;
-    border-radius: 15px;
-    background: url('foodbi.jpg') no-repeat center center/cover;
-
-    position: relative; 
-}
-
-.form-control {
-    max-width: 300px;
-    border-radius: 25px;
+  border-radius: 10px;
 }
 
 .btn-dark {
-    border-radius: 25px;
-    padding: 10px 20px;
+  border-radius: 25px;
+  padding: 10px 20px;
 }
 
+footer {
+  background-color: #ffffff;
+  color: #333;
+  display: flex;
+  text-align: center;
+  padding: 20px 0;
+}
+footer a {
+  color: #6c757d;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.foodieland-description {
+  color: gray;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.links-container {
+  display: flex;
+  gap: 20px;
+}
+.links-container .link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+.links-container .link:hover {
+  color: #333;
+}
+
+.subscribe-section {
+  border-radius: 20px;
+  background: white;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-section .container {
+  padding: 100px 0px;
+  border-radius: 15px;
+  background: url("assets/images/foodbi.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+.form-control {
+  max-width: 300px;
+  border-radius: 25px;
+}/*# sourceMappingURL=styles.css.map */
